@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "framework": null,
+  "functions": {
+    "api/servers/*.js": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/servers/:placeId",
+      "destination": "/server.js"
+    }
+  ]
+}
